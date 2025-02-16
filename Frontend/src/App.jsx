@@ -1,11 +1,19 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable no-unused-vars */
 
 import React from 'react';
+import { Button } from './components/ui/button';
 
 const App = () => {
-  return <h1 className="text-3xl font-bold underline text-red-500">
+  return (
+  <div>
+  <h1 className="text-3xl font-bold underline text-red-500">
   Hello world!
-</h1>
+  </h1>
+
+      <Button className="bg-red-500" variant="ghost">Click me</Button>
+    </div>
+  )
 }
 
 export default App;
